@@ -1,108 +1,44 @@
 {
   "name": "Default Profile",
-  "socd": "2IP",
-  "buttons": {
-    "l": 1,
-    "left": 2,
-    "down": 3,
-    "right": 4,
-    "modx": 5,
-    "mody": 6,
-    "start": 7,
-    "r": 8,
-    "y": 9,
-    "lightshield": 10,
-    "midshield": 11,
-    "b": 12,
-    "x": 13,
-    "zr": 14,
-    "up": 15,
-    "c-left": 16,
-    "c-up": 17,
-    "c-down": 18,
-    "a": 19,
-    "c-right": 20
-  },
-  "modifiers": {
-    "modx": {
-      // If the shield should tilt (not allow rolls and spot dodge).
-      "tilt_shield": true,
-      "horizontal": "53",
-      "vertical": "65",
-      "diagonal": {
-        "x": "51",
-        "y": "30"
-      },
-      "l": "255",
-      "r": "255",
-      "c-up": "53",
-      "c-down": "53",
-      "c-left": "53",
-      "c-right": "53"
-    },
-    "mody": {
-      // If the shield should tilt (not allow rolls and spot dodge).
-      "tilt_shield": true,
-      "horizontal": "28",
-      "vertical": "50",
-      "diagonal": {
-        "x": "53",
-        "y": "34"
-      },
-      "l": "255",
-      "r": "255",
-      "c-up": "53",
-      "c-down": "53",
-      "c-left": "53",
-      "c-right": "53"
-    },
-    // Mod X + left stick at a diagonal
-    "angled ftilts": {
-      "x": "36",
-      "y": "26"
-    },
-    // Mod Y + left stick at a diagonal
-    "pivot vertical tilts": {
-      "x": "50",
-      "y": "65"
-    },
-    // Left stick at a diagonal angle without holding b
-    "up-b angles": {
-      "c-down": {
-        "x": "53",
-        "y": "43"
-      },
-      "c-left": {
-        "x": "53",
-        "y": "39"
-      },
-      "c-up": {
-        "x": "56",
-        "y": "41"
-      },
-      "c-right": {
-        "x": "49",
-        "y": "42"
-      }
-    },
-    // Left stick at a diagonal angle WHILE holding b
-    "up-b angles extended": {
-      "c-down": {
-        "x": "67",
-        "y": "55"
-      },
-      "c-left": {
-        "x": "67",
-        "y": "49"
-      },
-      "c-up": {
-        "x": "67",
-        "y": "39"
-      },
-      "c-right": {
-        "x": "67",
-        "y": "35"
-      }
-    }
-  }
+  "authors": [ "Author 1" ],
+  "source": "https://github.com/avahe-kellenberger/b0xx_remapper/blob/master/profile_example.jsonc",
+  "profileVersion": "1.0.0",
+  "verticalSocd": "2IP",
+  "horizontalSocd": "2IP",
+  "inputMap": [
+    { "buttons": [ 1 ], "output": { "l": true } },
+    { "buttons": [ 2 ], "output": { "leftStickX": 28 } },
+    { "buttons": [ 3 ], "output": { "leftStickY": 28 } },
+    { "buttons": [ 4 ], "output": { "leftStickX": 228 } },
+    { "buttons": [ 7 ], "output": { "start": true } },
+    { "buttons": [ 8 ], "output": { "r": true } },
+    { "buttons": [ 9 ], "output": { "y": true } },
+    { "buttons": [ 11 ], "output": { "zl": true } },
+    { "buttons": [ 12 ], "output": { "b": true } },
+    { "buttons": [ 13 ], "output": { "x": true } },
+    { "buttons": [ 14 ], "output": { "zr": true } },
+    { "buttons": [ 15 ], "output": { "leftStickY": 228 } },
+    { "buttons": [ 16 ], "output": { "rightStickX": 28 } },
+    { "buttons": [ 17 ], "output": { "rightStickY": 228 } },
+    { "buttons": [ 18 ], "output": { "rightStickY": 28 } },
+    { "buttons": [ 19 ], "output": { "a": true } },
+    { "buttons": [ 20 ], "output": { "rightStickX": 228 } },
+    // Mod X
+    { "buttons": [ 2, 5 ], "output": { "leftStickX": 75  } },
+    { "buttons": [ 4, 5 ], "output": { "leftStickX": 181 } },
+    { "buttons": [ 3, 5 ], "output": { "leftStickY": 63 } },
+    // Mod Y
+    { "buttons": [ 2, 6 ], "output": { "leftStickX": 75  } },
+    { "buttons": [ 4, 6 ], "output": { "leftStickX": 156 } },
+    { "buttons": [ 3, 6 ], "output": { "leftStickY": 63 } },
+    // Dpad
+    { "buttons": [5, 6, 16 ], "output": { "dpadLeft": true } },
+    { "buttons": [5, 6, 17 ], "output": { "dpadUp": true } },
+    { "buttons": [5, 6, 18 ], "output": { "dpadDown": true } },
+    { "buttons": [5, 6, 20 ], "output": { "dpadRight": true } },
+    // Special buttons
+    { "buttons": [5, 6, 7 ], "output": { "home": true, "start": false } },
+    { "buttons": [5, 7 ], "output": { "select": true, "start": false } }
+  ]
 }
+
